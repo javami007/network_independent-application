@@ -11,7 +11,8 @@
 void setupLoRa();
 void sendLoRaMessage(const String& message);
 void setupMeshNetwork();
-void onMessageReceived(uint32_t from, String &msg);
+void onMessageReceived(uint32_t from, String& msg);
+void sendLocationData(float latitude, float longitude);
+void resendUnsentMessages();
 
 #endif
-
